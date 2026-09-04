@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  /* Layered light neutrals */
+  --background: #fbf9f6;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+
+  --foreground: #201a16;
+  --muted-foreground: #6b6259;
+
+  --border: #e7e1d8;
+  --border-strong: #d8cfc1;
+
+  /* Primary: warm coral/orange, pulled from the logo wordmark */
+  --primary: #e0672a;
+  --primary-hover: #c85520;
+  --primary-foreground: #fffaf5;
+
+  /* Accent: deep blue, pulled from the logo pinwheel */
+  --accent: #1f3f66;
+  --accent-hover: #16304f;
+  --accent-foreground: #f5f8fb;
+
+  /* Decorative-only tints from the remaining logo hues */
+  --tint-green: #3f7a4f;
+  --tint-magenta: #b23a63;
+  --tint-purple: #5b4a8a;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-tint-green: var(--tint-green);
+  --color-tint-magenta: var(--tint-magenta);
+  --color-tint-purple: var(--tint-purple);
+
+  --font-display: var(--font-allerta);
+  --font-sans: var(--font-inter);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fbf9f6;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    --foreground: #201a16;
+    --muted-foreground: #6b6259;
+    --border: #e7e1d8;
+    --border-strong: #d8cfc1;
+  }
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
