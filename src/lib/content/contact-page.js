@@ -1,3 +1,5 @@
+import { siteConfig } from "@/lib/site-config";
+
 export const contactContent = {
   hero: {
     eyebrow: "Contact Us",
@@ -15,8 +17,8 @@ export const contactContent = {
     },
     {
       label: "Call us",
-      value: "(403) 708-8214",
-      href: "tel:+14037088214",
+      value: siteConfig.phoneDisplay,
+      href: `tel:${siteConfig.phone}`,
     },
     {
       label: "Find us",

@@ -44,8 +44,8 @@ export const metadata = {
     images: [
       {
         url: siteConfig.logo,
-        width: 107,
-        height: 122,
+        width: 512,
+        height: 487,
         alt: "Ebenezer Relief Society logo",
       },
     ],

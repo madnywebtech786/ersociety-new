@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Reveal } from "../ui/Reveal";
+import { siteConfig } from "@/lib/site-config";
 
 export function TeamMemberCard({ name, title, image, index = 0 }) {
   const useAccent = index % 2 === 1;
@@ -22,7 +23,7 @@ export function TeamMemberCard({ name, title, image, index = 0 }) {
             }`}
           >
             <Image
-              src="/images/logo.webp"
+              src={siteConfig.logo}
               alt=""
               aria-hidden="true"
               width={72}

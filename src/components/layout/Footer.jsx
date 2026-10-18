@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { programs } from "@/lib/content/programs";
 import { services } from "@/lib/content/services";
+import { siteConfig } from "@/lib/site-config";
 
 const QUICK_LINKS = [
   { label: "About Us", href: "/about" },
@@ -15,7 +16,7 @@ const QUICK_LINKS = [
 
 const CONTACT_DETAILS = [
   { icon: Mail, label: "info@ersociety.ca", href: "mailto:info@ersociety.ca" },
-  { icon: Phone, label: "(403) 708-8214", href: "tel:+14037088214" },
+  { icon: Phone, label: siteConfig.phoneDisplay, href: `tel:${siteConfig.phone}` },
   { icon: MapPin, label: "Calgary, Alberta, Canada", href: null },
 ];
 
@@ -49,7 +50,7 @@ export function Footer() {
           <div className="col-span-2 flex flex-col gap-5 sm:col-span-3 lg:col-span-1">
             <Link href="/#top" className="flex items-center gap-3">
               <Image
-                src="/images/logo.webp"
+                src={siteConfig.logo}
                 alt="Ebenezer Relief Society logo"
                 width={44}
                 height={44}

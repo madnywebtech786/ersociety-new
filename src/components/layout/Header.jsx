@@ -8,6 +8,7 @@ import { MagneticButton } from "../ui/MagneticButton";
 import { AboutDropdown } from "./AboutDropdown";
 import { ProgramsDropdown } from "./ProgramsDropdown";
 import { ServicesDropdown } from "./ServicesDropdown";
+import { siteConfig } from "@/lib/site-config";
 
 const NAV_LINKS = [
   { label: "Activities", href: "/activities" },
@@ -48,11 +49,11 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
         <Link href="/#top" className="flex items-center gap-3">
           <Image
-            src="/images/logo.webp"
+            src={siteConfig.logo}
             alt="Ebenezer Relief Society logo"
             width={40}
             height={40}
-            className="h-10 w-10 object-contain"
+            className="h-10 w-10 rounded-full bg-white object-contain"
             preload
           />
           <span

@@ -27,4 +27,9 @@ export const galleryImages = [
   { src: "/images/gallery-12.webp", alt: "Members of the Ebenezer Relief Society community at a gathering", aspect: "aspect-3/4" },
   { src: "/images/gallery-13.webp", alt: "Youth playing basketball through the Ebenezer Relief Society sports program", aspect: "aspect-square" },
   { src: "/images/programs-banner.webp", alt: "Ebenezer Relief Society volunteers and community members working together", aspect: "aspect-4/3" },
+  { src: "/images/gallery-14.webp", alt: "Community members and children gathered around a table of computer equipment at an Ebenezer Relief Society event", aspect: "aspect-4/3" },
+  { src: "/images/gallery-15.webp", alt: "Families standing and seated around a curved table in a meeting room at an Ebenezer Relief Society event", aspect: "aspect-3/4" },
+  { src: "/images/gallery-16.webp", alt: "Children seated at a table with adults standing nearby and computer equipment wrapped in bubble wrap", aspect: "aspect-square" },
+  { src: "/images/gallery-17.webp", alt: "Community members gathered around a curved table in a meeting room with wrapped computer equipment", aspect: "aspect-4/3" },
+  { src: "/images/gallery-18.webp", alt: "Adults standing and children seated around curved tables in a meeting room at an Ebenezer Relief Society event", aspect: "aspect-3/4" },
 ];
